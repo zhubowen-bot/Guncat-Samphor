@@ -1,0 +1,16 @@
+{
+  "name": "large-model-stego",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "大模型隐语：基于语言模型采样的中文文本隐写（Qwen2.5 本地集成）",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tests/test_arith.mjs && node tests/test_stego2m.mjs && node tests/test_preamble_boundary.mjs",
+    "bench": "node tests/bench.mjs"
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "^4.3.2",
+    "esbuild": "^0.25.0"
+  }
+}
